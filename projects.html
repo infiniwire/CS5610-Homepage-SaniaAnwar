@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sania Anwar" />
+    <meta
+      name="description"
+      content="Sania Anwar's projects (CS 5610 - Web Development (PROJECT 1))"
+    />
+    <link rel="icon" href="./images/cat.png" />
+    <title>Sania Anwar | Projects</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img src="./images/cat.png" alt="cat" class="cat-flip" />
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="card nav-card justify-content-center">
+          <ul class="navbar-nav nav-links">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./hobbies.html">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="card transparent-box container">
+      <section class="projects-section container text-center">
+        <h2>PROJECTS</h2>
+        <div class="row g-3">
+          <div class="col-lg-5 d-flex flex-column gap-3">
+            <button
+              class="card project-card"
+              data-description="Built a real-time multiplayer escape room game for 2 to 8 players 
+using Java, Firebase Realtime Database, and Firebase Auth. 
+Implemented synchronized puzzle state, tilt-based sensor puzzles, 
+and 2D animations with MotionLayout. Owned end-to-end product decisions 
+including game flow design, user onboarding, and session management 
+across multiple concurrent players."
+            >
+              <img
+                src="./images/proj1.png"
+                alt="The Great Escape"
+                class="project-thumb"
+              />
+              <span class="project-name">The Great Escape</span>
+            </button>
+
+            <button
+              class="card project-card"
+              data-description="Automated a robotic arm using Nordic nRF7002-DK with 
+Zephyr RTOS, integrating servo motors, keypad, joystick, 
+and IR sensor for movement control and object detection. 
+This was built and demoed at the LoT Hackathon at Northeastern University. 
+Designed and iterated on the control interface to optimize usability across 
+multiple input modalities, balancing precision, response time, and 
+hardware constraints to deliver a reliable, fully functional 
+embedded system end-to-end."
+            >
+              <img
+                src="./images/proj2.png"
+                alt="nRF7002-DK Robotic Arm"
+                class="project-thumb"
+              />
+              <span class="project-name">nRF7002-DK Robotic Arm</span>
+            </button>
+
+            <button
+              class="card project-card"
+              data-description="This is a full-stack web application for managing clubs, 
+events, and RSVPs. Members can browse clubs, register for events, 
+and RSVP, while organizers manage events and track participation. I built the Flask back end and MySQL schema for clubs, events, 
+members, and RSVPs, with REST endpoints powering the UI. I also wrote complex SQL queries using 
+joins and aggregations to drive participation analytics. "
+            >
+              <img
+                src="./images/proj3.png"
+                alt="Club & Event Management System"
+                class="project-thumb"
+              />
+              <span class="project-name">Club & Event Management System</span>
+            </button>
+
+            <button
+              class="card project-card"
+              data-description="This paper presents a satellite-augmented autonomous navigation 
+framework that addresses a critical gap in existing self-driving systems: 
+the over-reliance on ground-based sensors. By integrating satellite imagery with 
+real-time AI-driven perception, the framework achieves a more complete 
+and resilient understanding of the driving environment that remains 
+effective under occlusions, low-light conditions, and adverse weather. 
+The system draws on multi-source data fusion, combining aerial and ground-level 
+inputs to enhance situational awareness beyond what any single sensing modality can offer."
+            >
+              <img
+                src="./images/proj4.png"
+                alt="Traffic Detection & Lane Segmentation"
+                class="project-thumb"
+              />
+              <span class="project-name"
+                >Traffic Detection & Lane Segmentation</span
+              >
+            </button>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="card project-detail h-100">
+              <p class="proj-detailed mb-0">Click a project to learn more!</p>
+              <div class="proj-content d-none">
+                <img
+                  src="./images/proj1.png"
+                  alt="Project preview"
+                  class="proj-detailed-img"
+                />
+                <h3 class="proj-detailed-name">Project Name</h3>
+                <p class="proj-description mb-0"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

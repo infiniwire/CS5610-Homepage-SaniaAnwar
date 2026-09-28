@@ -1,0 +1,494 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cat-flip {
+  max-width: 100%;
+  max-height: 180px;
+  height: auto;
+  transform: rotate(180deg);
+  display: inline-block;
+  animation: cat-drop 0.9s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+}
+
+@keyframes cat-drop {
+  from {
+    translate: 0 -250px;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-flip {
+    animation: none;
+  }
+}
+
+.nav-card {
+  flex-direction: row;
+  padding: 0.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.nav-links {
+  gap: 2rem;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: black;
+}
+
+.transparent-box {
+  width: min(90%, 900px);
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* HOME PAGE */
+
+.about-me,
+.college-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.about-me h2,
+.college-section h2 {
+  color: white;
+  text-shadow: 0 2px 6px black;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.outer-card {
+  max-width: 700px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: none;
+  margin-top: 1.5rem;
+}
+
+.inner-card {
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.about-photo {
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 270px;
+}
+
+.uni-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.uni-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.uni-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uni-text {
+  justify-self: start;
+  text-align: left;
+}
+
+.college-section h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.college-section h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.uni-divider {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+/* PROJECTS */
+
+.projects-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.projects-section h2 {
+  color: white;
+  text-shadow: 0 2px 6px black;
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.project-card.active {
+  outline: 3px solid gray;
+}
+.project-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-detail {
+  padding: 1.5rem;
+  border-radius: 16px;
+  justify-content: center;
+}
+
+.proj-detailed-img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.proj-detailed-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* HOBBIES */
+
+.hobbies-card {
+  width: 90%;
+  max-width: 1400px;
+}
+
+/* camera */
+
+.hobbies-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+  padding: 2rem 0;
+}
+
+.camera-wrap {
+  position: relative;
+  flex: 0 0 60%;
+  transition: flex-basis 0.8s ease;
+}
+
+.hobbies-stage.opened .camera-wrap {
+  flex-basis: 50%;
+}
+
+.camera-img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.35));
+}
+
+.camera-screen {
+  position: absolute;
+  z-index: 0;
+  left: 7%;
+  top: 33%;
+  width: 47.3%;
+  height: 52.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: white;
+}
+
+.screen-text {
+  font-size: clamp(1rem, 2.5vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.screen-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.func-button {
+  position: absolute;
+  z-index: 2;
+  left: 78%;
+  top: 60%;
+  width: 9%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  animation: pulse 1.8s ease-out infinite;
+}
+
+.hobbies-stage.opened .func-button {
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+  }
+}
+
+/* arrow + text */
+.click-hint {
+  position: absolute;
+  z-index: 2;
+  left: 82.5%;
+  top: 48%;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  animation: nudge 1.2s ease-in-out infinite;
+}
+
+.hobbies-stage.opened .click-hint {
+  opacity: 0;
+}
+
+.click-hint svg {
+  width: 100%;
+  fill: none;
+  stroke: white;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+.click-hint span {
+  font-family: "Caveat", cursive;
+  font-size: clamp(1.25rem, 2.5vw, 2.25rem);
+  color: white;
+  text-shadow: 0 2px 6px black;
+  white-space: nowrap;
+  transform: rotate(-6deg);
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: -8px -4px;
+  }
+}
+
+/* photo strips show up after button is clicked */
+.film-strips {
+  flex: 0 0 0%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  overflow: hidden;
+  visibility: hidden;
+  transition:
+    flex-basis 0.8s ease,
+    visibility 0s linear 0.8s;
+}
+
+.hobbies-stage.opened .film-strips {
+  flex-basis: 45%;
+  margin-left: 2rem;
+  padding: 1rem 0;
+  visibility: visible;
+  transition:
+    flex-basis 0.8s ease,
+    visibility 0s;
+}
+
+.film-strip {
+  position: relative;
+  flex: 0 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px 26px;
+  border-radius: 4px;
+  background-color: #111;
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.film-strip::before,
+.film-strip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0 6px,
+    #eee 6px 14px,
+    transparent 14px 20px
+  );
+}
+
+.film-strip::before {
+  left: 8px;
+}
+.film-strip::after {
+  right: 8px;
+}
+
+/* photo strips */
+.hobbies-stage.opened .film-strip {
+  opacity: 1;
+}
+
+.hobbies-stage.opened .film-strip:nth-child(1) {
+  transform: rotate(-2deg);
+  transition-delay: 0.7s;
+}
+
+.hobbies-stage.opened .film-strip:nth-child(2) {
+  transform: rotate(2deg);
+  transition-delay: 1.2s;
+}
+
+.film-photo {
+  display: block;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.hobbies-stage.opened .film-photo {
+  opacity: 1;
+  transition-delay: calc(0.9s + var(--i) * 0.15s);
+}
+
+.film-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.film-photo:hover img {
+  transform: scale(1.08);
+}
+
+.film-photo.active {
+  outline: 3px solid white;
+}
+
+.hobbies-note {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .hobbies-stage {
+    flex-direction: column;
+  }
+
+  .camera-wrap,
+  .hobbies-stage.opened .camera-wrap {
+    flex: none;
+    width: 75%;
+  }
+
+  .film-strips,
+  .hobbies-stage.opened .film-strips {
+    flex: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .film-strips {
+    max-height: 0;
+  }
+
+  .hobbies-stage.opened .film-strips {
+    max-height: 2000px;
+    margin-top: 2rem;
+  }
+}

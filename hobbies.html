@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sania Anwar" />
+    <meta
+      name="description"
+      content="Sania Anwar's hobbies (CS 5610 - Web Development (PROJECT 1))"
+    />
+    <link rel="icon" href="./images/cat.png" />
+    <title>Sania Anwar | Hobbies</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img src="./images/cat.png" alt="cat" class="cat-flip" />
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="card nav-card justify-content-center">
+          <ul class="navbar-nav nav-links">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./hobbies.html">Hobbies</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="card transparent-box hobbies-card">
+      <div class="hobbies-stage">
+        <div class="camera-wrap">
+          <div class="camera-screen">
+            <span class="screen-text">MY HOBBIES</span>
+            <img
+              src="./images/hobby1.jpg"
+              alt="Selected hobby photo"
+              class="screen-photo d-none"
+            />
+          </div>
+          <img
+            src="./images/camera-crop.png"
+            alt="Canon camera"
+            class="camera-img"
+          />
+          <button
+            class="func-button"
+            aria-label="Show my hobby photos"
+          ></button>
+
+          <div class="click-hint">
+            <span>click me! :)</span>
+            <svg viewBox="0 0 120 80" aria-hidden="true">
+              <path d="M110 70 C 90 20, 50 10, 12 22" />
+              <path d="M26 10 L 10 22 L 27 32" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="film-strips">
+          <div class="film-strip">
+            <button class="film-photo" style="--i: 0">
+              <img
+                src="./images/hobby1.jpg"
+                alt="lavender field"
+                style="object-position: center bottom"
+              />
+            </button>
+            <button class="film-photo" style="--i: 1">
+              <img
+                src="./images/hobby2.jpg"
+                alt="fireworks"
+                style="object-position: center"
+              />
+            </button>
+            <button class="film-photo" style="--i: 2">
+              <img src="./images/hobby3.png" alt="nature" />
+            </button>
+            <button class="film-photo" style="--i: 3">
+              <img src="./images/hobby4.png" alt="michigan" />
+            </button>
+          </div>
+          <div class="film-strip">
+            <button class="film-photo" style="--i: 4">
+              <img src="./images/hobby5.png" alt="food" />
+            </button>
+            <button class="film-photo" style="--i: 5">
+              <img
+                src="./images/hobby6.png"
+                alt="fall"
+                style="object-position: center bottom"
+              />
+            </button>
+            <button class="film-photo" style="--i: 6">
+              <img src="./images/hobby7.png" alt="beach" />
+            </button>
+            <button class="film-photo" style="--i: 7">
+              <img src="./images/hobby8.png" alt="sunset" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <p class="hobbies-note">
+        Fun fact about me - I LOVE TAKING PHOTOS!! Whether it's of nature,
+        sunsets, food, or even myself, I love it all. I've been obsessed with
+        photography since I was a child and I love using it as a creative
+        outlet! Enjoy some of my favorite clicks from the past couple months.
+      </p>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
