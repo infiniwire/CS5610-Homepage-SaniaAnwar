@@ -1,4 +1,4 @@
-// Projects page: clicking a project card shows its details on the right
+// PROJECTS - shows detailed view when you click it
 export function initProjects() {
   const projectCards = document.querySelectorAll(".project-card");
   const detail = document.querySelector(".project-detail");

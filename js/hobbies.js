@@ -1,4 +1,4 @@
-// Hobbies page: the FUNC SET button slides the camera left and shows the film strips
+// HOBBIES: the FUNC SET button shows the film strips
 export function initHobbies() {
   const stage = document.querySelector(".hobbies-stage");
 
@@ -11,7 +11,6 @@ export function initHobbies() {
     funcButton.addEventListener("click", () => {
       stage.classList.toggle("opened");
 
-      // Closing puts the camera screen back to its title
       if (!stage.classList.contains("opened")) {
         screenPhoto.classList.add("d-none");
         screenText.classList.remove("d-none");
@@ -26,7 +25,7 @@ export function initHobbies() {
 
         screenPhoto.src = img.src;
         screenPhoto.alt = img.alt;
-        // Crop the screen the same way as the film photo (object-position set in the HTML)
+        
         screenPhoto.style.objectPosition = img.style.objectPosition;
         screenPhoto.classList.remove("d-none");
         screenText.classList.add("d-none");
