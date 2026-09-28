@@ -103,18 +103,22 @@ The project description, personas, user stories and wireframes are in the [desig
 
 I used generative AI for the third page of my project which was for hobbies.
 
-- **Tool, model and version:** [Claude Sonnet 5]
+- **Tool, model and version:** Claude Sonnet 5
 - **How it was used:** the AI generated the hobbies page's HTML, its CSS (the camera, film strips and animations, which are in the hobbies section of `css/style.css`) and its JavaScript (`js/hobbies.js`).
-- **Prompts:** My first prompt was giving it a plan about how I wanted the page to be structured (camera on the right side and photos on left). I also explained how I wanted the mechanism to work the way I wanted it to.
+- **Prompts:** My first prompt was giving it a plan about how I wanted the page to be structured (camera on the left side and photos on right). I also explained how I wanted the mechanism to work the way I wanted it to. It asked me exactly how I wanted the button clicking to be set since I had uploaded my own camera image. One thing that AI was able to do without me explaining was show the preview of the image on the camera screen when you click it. I had uploaded a picture with a blank screen and it was able to preview the picture there which was quite interesting!
+
 - **What I did:** I gave it all the pictures that needed to be added, along with the camera picture. It also took a little back and forth to get the button clicking mechanism since it wasn't able to put everything exactly where I wanted it to be.
 
 ## Credits
 
-- Camera image: [[Pinterest](https://www.pinterest.com/pin/726275877450769233/)]
-- Background image: [[Unsplash](https://unsplash.com/photos/a-large-body-of-water-with-a-boat-in-the-distance-1VNkq9PWv8w)]
-- GitHub, LinkedIn, and email icons: [[Wikipedia](https://en.wikipedia.org/wiki/LinkedIn)]
-- NU and VIT logos: [[Wikipedia](https://en.wikipedia.org/wiki/LinkedIn)]
-- Cat photo: [[Creazilla](https://creazilla.com/media/clipart/17836/friendly-kitten)]
+- Camera image: [Pinterest](https://www.pinterest.com/pin/726275877450769233/)
+- Background image: [Unsplash](https://unsplash.com/photos/a-large-body-of-water-with-a-boat-in-the-distance-1VNkq9PWv8w)
+- GitHub icon: [Wikipedia](https://en.wikipedia.org/wiki/GitHub)
+- LinkedIn icon: [Wikipedia](https://en.wikipedia.org/wiki/LinkedIn)
+- Email icon: [Wikipedia](https://en.wikipedia.org/wiki/Microsoft_Outlook)
+- NU logo: [Wikipedia](https://en.wikipedia.org/wiki/Northeastern_University)
+- VIT logo: [Wikipedia](https://en.wikipedia.org/wiki/Vellore_Institute_of_Technology)
+- Cat image: [Creazilla](https://creazilla.com/media/clipart/17836/friendly-kitten)
 - Picture of me, project photos, hobby photos: taken by me.
 - Bootstrap: https://getbootstrap.com/
 - Caveat font: Google Fonts
