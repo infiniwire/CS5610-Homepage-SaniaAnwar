@@ -2,6 +2,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   margin: 0;
   background-image: url("../images/bg.jpg");
+  /* This ../images/bg.jpg is quite large, so maybe compressing it could help reduce the page load time without noticeably affecting the image quality. */
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
