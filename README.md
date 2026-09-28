@@ -4,7 +4,6 @@ This is a three-page personal homepage which was built with vanilla HTML5, CSS3 
 
 **Live site:** https://saniaanwar.github.io/CS5610-Homepage-SaniaAnwar/
 
-
 ## Project Objective
 
 This is Project 1 for CS 5610 (Web Development). The goal was to build a front-end-only homepage (with no backend, no jQuery and no component libraries). We had to add one creative element that makes it different from other homepages. I wanted a page that a recruiter, a classmate or a professor could open and quickly find who I am, what I've built, and how to contact me.
@@ -16,16 +15,16 @@ This is Project 1 for CS 5610 (Web Development). The goal was to build a front-e
 
 ## Demo Video
 
-[Watch a demo video here!](link)
+[Watch a demo video here!](https://youtu.be/wYR5GOQtKh4)
 
 ## Pages
 
 - **Home (`index.html`):** a short intro about me, my education, and contact links (GitHub, LinkedIn, email).
-![Home page](docs/screenshots/home-gif.gif)
+  ![Home page](docs/screenshots/home-gif.gif)
 - **Projects (`projects.html`):** a list of my four most recent projects. When you click a project, it shows its details on the right.
-![Projects page](docs/screenshots/proj-gif.gif)
+  ![Projects page](docs/screenshots/proj-gif.gif)
 - **Hobbies (`hobbies.html`):** a page about my hobby of photography. When you click the button on the camera, it slides it over and shows two film strips of my photos. Clicking the photo in the film strip shows it on the camera's screen. This page was generated with AI ([Use of Generative AI](#use-of-generative-ai)).
-![Hobbies page](docs/screenshots/hobby-gif.gif)
+  ![Hobbies page](docs/screenshots/hobby-gif.gif)
 
 ## Creative Additions
 
@@ -49,7 +48,7 @@ This is Project 1 for CS 5610 (Web Development). The goal was to build a front-e
 
 ## How to Install and Run
 
-1. Clone the repository: 
+1. Clone the repository:
 
    ```
    git clone https://github.com/saniaanwar/CS5610-Homepage-SaniaAnwar.git
@@ -61,6 +60,7 @@ This is Project 1 for CS 5610 (Web Development). The goal was to build a front-e
    ```
    npm install
    ```
+
 3. Start a local server from the project folder. Either use the **Live Server** extension in VS Code, or run:
    ```
    python3 -m http.server 8000
@@ -102,7 +102,6 @@ The project description, personas, user stories and wireframes are in the [desig
 ## Use of Generative AI
 
 I used generative AI for the third page of my project which was for hobbies.
-
 
 - **Tool, model and version:** [Claude Sonnet 5]
 - **How it was used:** the AI generated the hobbies page's HTML, its CSS (the camera, film strips and animations, which are in the hobbies section of `css/style.css`) and its JavaScript (`js/hobbies.js`).

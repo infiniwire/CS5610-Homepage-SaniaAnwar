@@ -25,7 +25,7 @@ export function initHobbies() {
 
         screenPhoto.src = img.src;
         screenPhoto.alt = img.alt;
-        
+
         screenPhoto.style.objectPosition = img.style.objectPosition;
         screenPhoto.classList.remove("d-none");
         screenText.classList.add("d-none");
