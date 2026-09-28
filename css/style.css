@@ -75,13 +75,15 @@ body {
 /* HOME PAGE */
 
 .about-me,
-.college-section {
+.college-section,
+.contact-section {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
 .about-me h2,
-.college-section h2 {
+.college-section h2,
+.contact-section h2 {
   color: white;
   text-shadow: 0 2px 6px black;
   display: inline-block;
@@ -151,6 +153,37 @@ body {
 .uni-divider {
   font-size: 2rem;
   margin: 0.5rem 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid lightblue;
+  border-radius: 12px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.contact-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* PROJECTS */
@@ -349,6 +382,7 @@ body {
 }
 
 /* photo strips show up after button is clicked */
+
 .film-strips {
   flex: 0 0 0%;
   display: flex;
@@ -410,6 +444,7 @@ body {
 }
 
 /* photo strips */
+
 .hobbies-stage.opened .film-strip {
   opacity: 1;
 }
